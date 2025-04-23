@@ -156,6 +156,23 @@
 
 <main class="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 py-4 px-3 sm:px-4 font-sans text-slate-700 overflow-x-hidden">
   <div class="max-w-4xl mx-auto">
+    <!-- Google Drive Link Banner -->
+    <div class="mb-4 bg-white/80 backdrop-blur-md rounded-lg border border-white/50 shadow-md p-3 transition-all duration-700 {isPageLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}">
+      <a href="https://drive.google.com/drive/folders/1yBkI2Wea95dlJ2svK4vAYr_4YONYvG5N?usp=drive_link" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         class="flex items-center justify-between text-slate-700 hover:text-blue-600 transition-colors">
+        <div class="flex items-center">
+          <svg class="w-5 h-5 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 11l8.71 5.03-3.35 5.81-8.71-5.03 3.35-5.81zM7.69 14.97L3 11.38l4.26-7.38 4.69 2.7-4.26 8.27z"></path>
+            <path d="M15.92 22.53l-1.64-2.84 8.69-5.03-1.36-2.43-8.69 5.16-4.69-2.83L20.69 2.47l4.69 2.84-9.46 17.22z"></path>
+          </svg>
+          <span class="font-medium">Access All Files in Google Drive</span>
+        </div>
+        <span class="text-sm bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">Open Folder</span>
+      </a>
+    </div>
+    
     <!-- Header with glass effect (more compact) -->
     <header class="text-center mb-8 relative">
       <div class="absolute inset-0 bg-gradient-to-r from-blue-300/30 to-purple-300/30 rounded-xl blur-xl -z-10 transform -translate-y-4 opacity-70"></div>
