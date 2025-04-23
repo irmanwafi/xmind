@@ -4,6 +4,10 @@
 
 ![XMind Logo](public/static/faviconX.png)
 
+## 🌐 Website
+
+Visit the live website: [XMind Smart Converter](https://xmind-2l7.pages.dev/)
+
 ## 🌟 Overview
 
 XMind Smart Converter is a web application that provides a step-by-step tutorial for transforming raw data from spreadsheets into structured mind maps and PowerPoint SmartArt. This tool bridges the gap between unstructured tabular data and visual representations that are easier to understand and present.
