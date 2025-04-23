@@ -1,0 +1,68 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+/* Custom modern UI styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-image: linear-gradient(to bottom right, #f8fafc, #eff6ff, #eef2ff);
+    background-attachment: fixed;
+  }
+  
+  /* Modern scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(203, 213, 225, 0.3);
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #2563eb, #7c3aed);
+  }
+}
+
+/* Glass morphism utility classes */
+.glass {
+  @apply bg-white/80 backdrop-blur-md border border-white/50 shadow-lg;
+}
+
+.glass-hover {
+  @apply hover:bg-white/90 hover:border-blue-300/50 transition-all duration-300;
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 5px rgba(59, 130, 246, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(139, 92, 246, 0.5); }
+  100% { box-shadow: 0 0 5px rgba(59, 130, 246, 0.3); }
+}
+
+.animate-glow {
+  animation: glow 4s ease-in-out infinite;
+}
